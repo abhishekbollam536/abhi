@@ -51,21 +51,27 @@
 //     console.log("finalhy block");
     
 // })
-function fetchUsers()
-{
-    let x = fetch("https://jsonplaceholder.typicode.com/posts");
-    x.then((response)=>{
-        return response.json().then(data=>{
-        //     console.log(data);
-        let x = document.getElementById("Post");
-        data.map((user)=>{
-            postMessage.innnerHTML +=
-            <tr>
-                <td>${user.id}</td>
-            </tr>
-        })
-        })
-    })
-    .catch(err=>console.log(err))
+// function fetchUsers()
+// {
+//     let x = fetch("");
+//     x.then((response)=>{
+//         return response.json().then(data=>{
+//         //     console.log(data);
+//         let x = document.getElementById("Post");
+//         data.map((user)=>{
+//             postMessage.innnerHTML +=
+//             <tr>
+//                 <td>${user.id}</td>
+//             </tr>
+//         })
+//         })
+//     })
+//     .catch(err=>console.log(err))
+// }
+// fetchUsers();
+async function fetchUsers(){
+    let response =await fetch("https://jsonplaceholder.typicode.com/posts");
+    let data =await response.json();
+    console.log(data);
 }
 fetchUsers();

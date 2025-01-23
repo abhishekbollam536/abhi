@@ -1,0 +1,14 @@
+DOM :- Document object model
+*****************************
+
+what is dom ?
+-Dom is a web api used to manipulate the html context 
+-Dom is used to add remove update the html elements 
+methods of Dom :-
+***************
+-Document.getElementById(""):-
+-document.getElementByClassName(")
+-document.getElementByTagname("");
+-document.getElementByName("");
+-document.querySelector("");
+-document.querySelectorAll("");
